@@ -151,17 +151,12 @@ position: sticky;
 
 
 .centered{
-
-  position: absolute;
       top: 50%;
       left: 50%;
       font-size: 43px;
       font-weight: 500;
-      padding: 65px 90px;
-      background: linear-gradient(rgb(15 15 15 / 38%), rgb(17 17 17 / 57%));
-      transform: translate(-50%, -50%);
-
 }
+
 
 .centered:hover{
 

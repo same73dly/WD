@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>يلا جملة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+    <script src="//code.jquery.com/jquery.min.js"></script>
+ 
+    <script src="https://kit.fontawesome.com/4caf5bd21d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- en -->
+    <link rel="stylesheet" href="css/style-en.css">
+    <!-- //en -->
+    <!-- arabic -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+        integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style-ar.css">
+    <!-- // arabic -->
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
+</head>
+
+
+
+<body>
+
+    <!------------------- header ----------------------->
+    <header class="yalla-header">
+        <nav class="navbar navbar-expand-lg bg-gray2">
+            <div class="container-fluid">
+                <div class="w-100 nav-box d-flex flex-wrap ">
+                    <div class="yalla-header__logo-box">
+                        <a class="navbar-brand" href="https://www.yalla-gomla.com" data-kmt="1">
+                            <img loading="lazy" class="" src="./imges/logo2.png" alt="يلا جملة لوجو">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="yalla_gomla_nav">
+                        <ul class="navbar-nav main-navbar">
+                            <li class="nav-item  nav-item-close">
+                                <button type="button" id="navbar-toggler-close" class="btn-close">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://www.yalla-gomla.com" data-kmt="1">الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" data-kmt="1">الأقسام
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/7-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9"
+                                        data-kmt="1">
+                                        <i class="fas fa-utensils">
+
+                                        </i> أدوات منزلية
+                                    </a>
+                                    <a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA%D9%87%D8%A7"
+                                        data-kmt="1"><i class="fas fa-tshirt"></i> ملابس ومستلزماتها</a>
+                                    <a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/4-%D8%A7%D9%84%D8%B9%D8%A7%D8%A8-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84"
+                                        data-kmt="1"><i class="fas fa-gamepad"></i> العاب ومستلزمات الاطفال</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/6-%D9%87%D8%AF%D8%A7%D9%8A%D8%A7"
+                                        data-kmt="1"><i class="fas fa-gift"></i> هدايا</a><a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/8-%D8%A7%D8%B6%D8%A7%D8%A1%D9%87-%D9%88%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA"
+                                        data-kmt="1"><i class="fas fa-lightbulb"></i> اضاءه وديكورات</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/1-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AD%D8%B1%D9%8A%D9%85%D9%8A"
+                                        data-kmt="1"><i class="far fa-gem"></i> اكسسوارات حريمي</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/14-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B1%D8%AC%D8%A7%D9%84%D9%8A"
+                                        data-kmt="1"><i class="fas fa-male"></i> اكسسوارات رجالي</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/5-%D9%85%D8%B3%D8%AA%D8%AD%D8%B6%D8%B1%D8%A7%D8%AA-%D8%AA%D8%AC%D9%85%D9%8A%D9%84-%D9%88%D8%B9%D8%B7%D9%88%D8%B1"
+                                        data-kmt="1"><i class="fas fa-paint-brush"></i> مستحضرات تجميل وعطور</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/3-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%AC%D9%84%D8%AF%D9%8A%D8%A9"
+                                        data-kmt="1"><i class="fas fa-shopping-bag"></i> منتجات جلدية</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/12-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9"
+                                        data-kmt="1"><i class="fas fa-book"></i> أدوات مكتبية</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">العروض </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">انضم كشريك </a>
+                            </li>
+                        </ul>
+                        <div class="auth">
+                            <ul class="navbar-nav sign-nav">
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-lang">English <img src="imges/us.png"
+                                            alt="ar-flag"></a>
+                                    <!-- <a href="#" class="nav-link btn btn-lang">Arabic <img src="imges/egy.png" alt="ar-flag"></a> -->
+
+                                </li>
+                                <li class="nav-item screen-search">
+                                    <form data-request-flash="" method="get" action="https://www.yalla-gomla.com/search"
+                                        data-kmt="1">
+                                        <div class="search-container">
+                                            <input class="search-input" aria-label="بتدور على ايه ؟" name="q"
+                                                type="text" placeholder="بتدور على ايه ؟">
+                                            <button class="search-button" aria-label="البحث" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sign" data-toggle="modal" href="#login_modal" data-kmt="1">تسجيل
+                                        الدخول</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div id="overlay-screen" class="over-lay"></div>
+
+                    <button id="navbar-toggler-open" class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#yalla_gomla_nav" aria-controls="yalla_gomla_nav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="search-mobile" class="search-mobile">
+                        <form data-request-flash="" method="get" action="#" data-kmt="1">
+                            <div class="search-container">
+                                <input id="search-mobile-input" class="search-input" aria-label="بتدور على ايه ؟"
+                                    name="q" type="text" placeholder="بتدور على ايه ؟">
+                                <button id="m-close-search" class="close-search" type="button">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <button id="show-search" class="show-search" aria-label="البحث" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------  header ---------------------->
+
+
+
+
+
+
+
+
+
+
+        <!------------------- paner -------------------->
+
+    <div class="index-ii">
+
+        <div class="paner" style="height:auto; ">
+            <!--------------- Swiper ------------------->
+            <div class="swiper mySwiper--paner mySwiper ">
+                <div class="swiper-wrapper">
+                
+                    <div class="swiper" id="sw" >
+                        <div class="row justify-content-between" style="padding-right: 7%; " >
+                            <div class="col-7 col-md-5 align-self-center" style="margin-top: 80px;">
+                                <div class="paner__text">
+                                    <h2 style="margin-top: 27px;">مكتبات الصفتي</h2>
+                                    <p>لتجارة الأدوات المكتبية و العاب الأطفال </p>
+                                                      </div>
+                                                      
+<div style="margin-top: -17px;">
+    
+    <ul class="rat" style="display: flex; margin-left: 10px;">
+        
+       <li class="rat-item" data-rate="1"> </li>
+       <li class="rat-item" data-rate="2"> </li>
+       <li class="rat-item" data-rate="3"> </li>
+       <li class="rat-item" data-rate="4"> </li>
+       <li class="rat-item" data-rate="5"> </li>
+       
+    </ul>
+
+    <p>4.5<img class="im" src="icons/bh.png" style="float: right;"> 
+    </p>
+
+   </div>
+   
+                            </div>
+                      
+                            <div class="col-5 col-md-4 align-self-center" style="margin-top: 77px;
+                            text-align: center;">
+                                
+                                   
+                                <div class="paner__img" style="text-align: center;">
+                                    <img class=" img-fluid" src="imges/icon.png" alt="yalla gomla slide img" style="
+                                    box-shadow: #495057 0px 0px 37px -17px;
+                                    border-radius: 50%;
+                                    max-width: 60%;">
+      
+
+      <div style="margin-top: 9px;">
+        <a href="#" style="background-color: #fcfcfc00;"> <img class="im" src="icons/share.png"> </a>
+        
+        <a href="#" style="background-color: #fcfcfc00;"><img class="im" src="icons/haert.png"> </a>
+    </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!------------------------ Swiper -------------------------->
+          </div>
+        <!---------------------------- end paner --------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------- gallery --------------------------->
+
+
+        <div class="container">
+            <div class="row">
+              <a href="imges/0.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-6" >
+                <img src="imges/0.jpg" class="img-fluid rounded">
+              </a>
+              <a href="imges/1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-6" style="padding-left: 11px;">
+                <img src="imges/1.jpg" class="img-fluid rounded">
+              </a>
+              
+            </div>
+
+
+            <div class="row" style="margin-top: 7px;">
+              <a href="imges/2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="imges/2.jpg" class="img-fluid rounded">
+              </a>
+              <a href="imges/3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="imges/3.jpg" class="img-fluid rounded">
+              </a>
+                  
+      <a class="col-md-4" class="example-image-link" href="imges/4.jpg" 
+      data-lightbox="example-set" data-title="" >
+          <img class="example-image" src="imges/4.jpg" alt=""  />
+        
+      <h4 class="libox" >+7</h4>
+    </a>
+            </div>
+
+
+            
+ <div style="display: none;">
+
+    
+    <a href="imges/0.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+        <img src="imges/0.jpg" class="img-fluid rounded">
+      </a>
+
+      <a href="imges/1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+        <img src="imges/1.jpg" class="img-fluid rounded">
+      </a>
+
+    <div class="row" style="margin-top: 7px;">
+      <a href="imges/2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+        <img src="imges/2.jpg" class="img-fluid rounded">
+      </a>
+
+      <a href="imges/3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+        <img src="imges/3.jpg" class="img-fluid rounded">
+      </a>
+
+    <a class="example-image-link" href="imges/5.jpg" data-lightbox="example-set" data-title="">
+       <img class="example-image" src="imges/5.jpg" alt="" /></a>
+
+    <a class="example-image-link" href="imges/6.jpg" data-lightbox="example-set" data-title="">
+       <img class="example-image" src="imges/6.jpg" alt="" /></a>
+
+    <a class="example-image-link" href="imges/7.jpg" data-lightbox="example-set" data-title="">
+       <img class="example-image" src="imges/7.jpg" alt="" /></a>
+
+    <a class="example-image-link" href="imges/8.jpg" data-lightbox="example-set" data-title="">
+       <img class="example-image" src="imges/8.jpg" alt="" /></a>
+
+    <a class="example-image-link" href="imges/9.jpg" data-lightbox="example-set" data-title="">
+       <img class="example-image" src="imges/9.jpg" alt="" /></a>
+    </div>
+
+    
+          </div>
+        </div>
+
+<!-------------------------- end gallery --------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------- about us --------------------------->
+        <div class="container-fluid text-center" style="margin: 27px 0px;">    
+            <div class="row content">
+              <div class="col-sm-1 sidenav">
+              </div>
+        <div class="col-sm-10 text-left"> 
+            <div class="attached">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header p-0" id="headingTwo">
+                            <h3 style='font-size:24px'>نبذة <img class="hid" src="icons/page.png"></h3>
+                        </h5>
+                            <div aria-label="" class="a" aria-expanded="false" aria-controls="collapseTwo">
+                            </div>
+                            
+                            
+                            </div>
+                            <div class="ab">
+                                <h6 style=" font-size: 14px; padding: 17px; line-height: 2;">مستوردون و موزعون منذ 25 عام لجميع الأدوات الكتابية و المكتبية و لعب الأطفال و الموزع المعتمد للكتب الخارجية الدراسية لمعظم مكتبات جمهورية مصر العربية .. البيع المباشر للتجار و الجمهور
+
+                                </h6>
+                                
+                            </div>
+                            
+                            </div> </div> </div> </div> </div> </div>
+
+
+<!----------------------------  end about us --------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!---------------------------- videos --------------------------->
+
+<div class="container-fluid text-center" style="margin: 27px 0px;">    
+    <div class="row content">
+  <div class="col-sm-1 sidenav"></div>
+         <div class="col-sm-10 text-left"> 
+  <div class="attached">
+  <div class="accordion" id="accordionExample">
+  <div class="card">
+   <div class="card-header p-0" id="headingTwo"> <h3> الفيديوهات <img src="icons/v.png" class="vid" ></h3>
+   <div aria-label="" class="a" aria-expanded="false" aria-controls="collapseTwo" ></div> 
+                                                                                          
+   </div>
+  
+  
+   <!-------------------  title videos   -------------------->
+  
+  
+   <g id="Group_57" data-name="Group 57" transform="translate(-1612 -2063)">
+      <g id="Ellipse_58" data-name="Ellipse 58" transform="translate(1612 2063)" fill="#fff" stroke="#585858" stroke-width="1">
+          <circle cx="42.5" cy="42.5" r="42.5" stroke="none"></circle>
+          <circle cx="42.5" cy="42.5" r="42" fill="none" ></circle></g>
+  
+
+          <iframe loading="lazy" width="auto" style="margin: 7px 7px;
+          width: 259px;" height="200px" src="https://www.youtube.com/embed/Vv9wuiDhw3E?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-kmt="1" id="widget2"></iframe>
+<div style="margin: 0px 37px;">
+<h5>مكتبات الصفتي</h5> 
+<p>للمستلزمات المكتبية  | مستورد و مصري </p>
+</div>
+          
+  </div> </div> </div> </div> </div> </div> </div></div>
+  
+   <!---------------------------- end videos --------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------- sale -------------------------->
+
+<div class="container-fluid text-center" style="margin: 27px 0px;
+">    
+    <div class="row content">
+      <div class="col-sm-1 sidenav">
+      </div>
+<div class="col-sm-10 text-left"> 
+    <div class="attached">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header p-0" id="headingTwo">
+                    <h3 style='font-size:24px'>العروض <img class="hid" src="icons/page.png"></h3>
+                </h5>
+                    <div aria-label="" class="a" aria-expanded="false" aria-controls="collapseTwo">
+                    </div>
+                    
+                    
+                    </div>
+
+
+
+
+
+<div class="bag-image">
+    <i class="favourite_icon far fa-heart"  id ="lik"></i>
+    <span></span>
+    
+    <img src="imges/1.jpg" class="image">
+    <div style="margin: 0px 20px;">
+       
+        <h5 style="font-size: 17px; margin-top: 8px; font-weight: 700;">اشتري 2 دسته و أحصل علي دسته</h5> 
+        <p style="font-size: 14px;">مكتبات الصفتي  | أدوات مكتبية 
+        <img class="im" src="icons/bh.png" >7  </p>
+        
+        </div>
+        
+
+    <style>
+
+div.bag-image {
+  display: inline-block;
+  /* just so that we  can see in the example */
+  margin-top: 1em;   
+}
+
+/* just for clarity */
+img.image {
+  border: 1px solid #ccc;
+}
+
+          </style>              
+                    
+                </div></div> </div> </div> </div> </div> </div>
+
+
+
+
+<!---------------------- end sale ---------------------------->
+
+
+
+
+
+
+
+        <!----------------------------  our products --------------------------->
+        <div class="container-fluid text-center" style="margin: 27px 0px;
+    ">    
+    <div class="row content">
+      <div class="col-sm-1 sidenav">
+      </div>
+ <div class="col-sm-10 text-left"> 
+    <div class="attached">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header p-0" id="headingTwo">
+                    
+                    <h3>المنتجات<img src="icons/car.png" class="mon"></h3>
+                    <div aria-label="" class="a" aria-expanded="false" aria-controls="collapseTwo">
+                       
+                            <g id="Group_54" data-name="Group 54" transform="translate(-1612 -1923)">
+                                <g id="Ellipse_57" data-name="Ellipse 57" transform="translate(1612 1923)" fill="#fff" stroke="#585858" stroke-width="1">
+                                    <circle cx="22.5" cy="22.5" r="22.5" stroke="none"></circle>
+                                    <circle cx="42.5" cy="42.5" r="42" fill="none"></circle></g>
+                                    <path id="business-time-solid" d="M31.379,14.171a9.11,9.11,0,1,0,9.11,9.11A9.105,9.105,0,0,0,31.379,14.171Zm4.049,9.508a.616.616,0,0,1-.614.614H30.982a.616.616,0,0,1-.614-.614V18.835a.616.616,0,0,1,.614-.614h.8a.616.616,0,0,1,.614.614v3.434h2.422a.616.616,0,0,1,.614.614ZM31.379,12.147c.342,0,.678.021,1.012.051V9.11a3.114,3.114,0,0,0-3.037-3.037H24.294V3.037A3.114,3.114,0,0,0,21.257,0H11.135A3.114,3.114,0,0,0,8.1,3.037V6.073H3.037A3.114,3.114,0,0,0,0,9.11v5.061H25A11.066,11.066,0,0,1,31.379,12.147ZM20.245,6.073h-8.1V4.049h8.1Zm.431,14.171H13.159a1.012,1.012,0,0,1-1.012-1.012V16.2H0v9.11a3.114,3.114,0,0,0,3.037,3.037H21.474a10.985,10.985,0,0,1-.8-8.1Z" transform="translate(1634.511 1949.809)" fill="#585858"></path></g></svg>
+                                    <div class="d-flex justify-content-between w-100 pl-4 ">
+                                    </div></div></div>
+ <div class="card-body" style="font-size: 12px;">
+    <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2" >
+        
+ <span>احبار</span></div>
+ <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>ادوات مكتبية</span></div>
+ <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>استاند الوان اكريلك</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>استيكه</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>الوان خشب</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>الوان خشب طويلة</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>الوان زجاج برطمان</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>الوان مائية</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>بازا حيوانات</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>براية</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>بنت</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>بنسان</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>بينسان</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>تركيب</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>حافظة</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>حبر</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>حرف</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>خرامة</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>دباسة</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>دباسه</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>شطرنج</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>طقم قلم</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>عربية ريموت</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>عروسة</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>علبه</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>غراء ابيض</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>فاكيوم</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>فسفورى</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>قلم جاف</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>قلم حبر</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>قلم رصاص</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>كتب خارجية</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>لعب اطفال</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>مصحح قلم جاف</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>مكتبة</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>ملاهي موسيقيه وانوار</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>ميكرون</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>ورق</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>ورق تصوير</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>يالونج</span></div><div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2"><span>يوني</span></div></div>                               
+  <div class="col-sm-1 sidenav"></div>
+</div></div></div></div></div></div></div>
+        <!----------------------------  end our products --------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!---------------------- our services ---------------------------->
+
+ <div class="container-fluid text-center" style="margin: 27px 0px;
+">    
+  <div class="row content">
+  <div class="col-sm-1 sidenav"></div>
+       <div class="col-sm-10 text-left"> 
+  <div class="attached">
+  <div class="accordion" id="accordionExample">
+ <div class="card">
+ <div class="card-header p-0" id="headingTwo"> <h3>خدمات إضافية <img src="icons/hand.png" class="gh" ></h3>
+ <div aria-label="" class="a" aria-expanded="false" aria-controls="collapseTwo"></div> 
+                                                                                        
+</div>
+
+
+ <!-------------------  ما بداخل المحتوي   -------------------->
+
+
+ <g id="Group_57" data-name="Group 57" transform="translate(-1612 -2063)" style="font-size: 12px;">
+    <g id="Ellipse_58" data-name="Ellipse 58" transform="translate(1612 2063)" fill="#fff" stroke="#585858" stroke-width="1">
+        <circle cx="42.5" cy="42.5" r="42.5" stroke="none"></circle>
+        <circle cx="42.5" cy="42.5" r="42" fill="none"></circle></g>
+        <g id="Group_56" data-name="Group 56">
+            <g id="Group_13" data-name="Group 13" transform="translate(3.5 -218.5)">
+                <line id="Line_41" data-name="Line 41" x1="40" transform="translate(1631.5 2311.5)" fill="none" stroke="#585858" stroke-width="1"></line>
+                <line id="Line_42" data-name="Line 42" x1="40" transform="translate(1631.5 2323.5)" fill="none" stroke="#585858" stroke-width="1"></line>
+                <line id="Line_43" data-name="Line 43" x1="40" transform="translate(1631.5 2335.5)" fill="none" stroke="#585858" stroke-width="1"></line></g></g></g></svg>
+
+    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample" style="font-size: 14px;">
+                    <div class="card-body"><div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> 
+                         <span>الدفع ببطاقات الأئتمان</span></div>
+                         <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> 
+                            <span>الدفع عن طريق التحويل</span></div>
+                            <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> 
+                                <span>الطلب عن طريق الأونلاين</span></div>
+                                <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> 
+                                    <span>الشحن مجاني</span></div>
+                                    <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> 
+                                         <span>يعمل طوال الأسبوع</span></div>
+                                         <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i>
+                                            <span>امكانية التصدير لخارج جمهورية مصر العربية</span></div>
+
+</div> </div> </div> </div> </div> </div> </div></div>
+
+        <!---------------------- end our services ---------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+<!---------------------- location member ---------------------------->
+  
+<div class="container">
+    
+    <div class="dropdown" style="text-align: right;">
+       <!----------- <h5 style="padding: 0px 3px;">الفروع <img src="icons/location.png" class="fro" ></h5>-->
+      <button type="button" id="boto" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="text-align: right;
+      padding: 7px 9%;
+      border: 1px solid;
+      background: #ffffff17;
+      color: #000000;">
+        أختر الفرع
+      </button>
+
+
+      <div class="dropdown-menu">
+        
+        <h5 class="h">مكتبات الصفتي</h5>
+        <span class="dropdown-item-text">٥٣ احمد قاسم جودة تقاطع عباس العقاد مع مصطفي النحاس مدينه نصر</span>
+        
+         <br>
+
+        <h5 class="h">مكتبات الصفتي</h5>
+        <span class="dropdown-item-text">٤ ابن النفيس مكرم عبيد مدينه نصر</span>
+      </div>
+    
+  
+  
+<!---------------------- end location member ---------------------------->
+
+
+
+
+
+
+
+
+
+  
+
+<!---------------------- my rateing ---------------------------->
+
+
+<div style="float: left;
+margin-top: -7px;">
+    <h5>أضف تقييمك</h5>
+ <ul class="rating">
+    <li class="rating-item" data-rate="1"> </li>
+    <li class="rating-item" data-rate="2"> </li>
+    <li class="rating-item" data-rate="3"> </li>
+    <li class="rating-item" data-rate="4"> </li>
+    <li class="rating-item" data-rate="5"> </li>
+ </ul>
+ 
+</div>
+</div></div>
+<!---------------------- end my rateing ---------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------- call member ---------------------------->
+
+<div class="container">
+    
+    <div class="drop" style="text-align: right;">
+              <button type="button" class="boton">
+        اضغط هنا للتواصل مع التاجر مباشرة وطلب المنتجات
+      </button>
+</div></div>
+
+<!---------------------- end call member ---------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------- footer -------------------------->
+    
+<footer class="text-white bg-gray2 pt-3" style="margin-top: 130px;">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-xs-12 col-sm-4 pb-3">
+                <img loading="lazy" class="img-fluid" src="https://www.yalla-gomla.com/themes/ygomla/assets/img/logo2.png" alt="يلا جمله">
+                <div class="mt-3"><h6>موقع يلا جمله أول موقع لتجارة الجملة في مصر</h6></div>
+                <a href="https://play.google.com/store/apps/details?id=com.yallagomla.yallagomla" data-kmt="1">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156px" height="45px" viewBox="0 0 156 45" version="1.1">
+        Generator: Sketch 62 (91390) - https://sketch.com 
+       <title>google-play-badge</title><desc>Created with Sketch.</desc><defs>
+           <linearGradient x1="61.6300891%" y1="4.8392%" x2="24.8007422%" y2="71.9688%" id="linearGradient-1">
+               <stop stop-color="#00A0FF" offset="0%"></stop><stop stop-color="#00A1FF" offset="0.657445%"></stop>
+               <stop stop-color="#00BEFF" offset="26.01%"></stop><stop stop-color="#00D2FF" offset="51.22%"></stop>
+               <stop stop-color="#00DFFF" offset="76.04%"></stop><stop stop-color="#00E3FF" offset="100%"></stop>
+            </linearGradient>
+    <linearGradient x1="107.727094%" y1="49.4294118%" x2="-130.66601%" y2="49.4294118%" id="linearGradient-2">
+            <stop stop-color="#FFE000" offset="0%"></stop>
+            <stop stop-color="#FFBD00" offset="40.87%"></stop>
+            <stop stop-color="#FFA500" offset="77.54%"></stop>
+            <stop stop-color="#FF9C00" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient x1="86.3886228%" y1="31.8306006%" x2="-49.8886228%" y2="131.516588%" id="linearGradient-3">
+            <stop stop-color="#FF3A44" offset="0%"></stop>
+            <stop stop-color="#C31162" offset="100%"></stop>
+    </linearGradient>
+        
+    <linearGradient x1="-18.5796407%" y1="-8.46302281%" x2="42.2742515%" y2="35.844198%" id="linearGradient-4">
+        <stop stop-color="#32A071" offset="0%"></stop>
+        <stop stop-color="#2DA771" offset="6.85%"></stop>
+        <stop stop-color="#15CF74" offset="47.62%"></stop>
+        <stop stop-color="#06E775" offset="80.09%"></stop>
+        <stop stop-color="#00F076" offset="100%"></stop></linearGradient></defs>
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="img_store" transform="translate(-174.000000, 0.000000)">
+                <g id="Group-4">
+                    <g id="google-play-badge" transform="translate(174.000000, 0.000000)"><g>
+                        <path d="M150.222222,45 L5.77777778,45 C2.54222222,45 0,42.525 0,39.375 L0,5.625 C0,2.475 2.54222222,0 5.77777778,0 L150.222222,0 C153.457778,0 156,2.475 156,5.625 L156,39.375 C156,42.525 153.457778,45 150.222222,45 Z" id="Shape" fill="#4B505A" fill-rule="nonzero"></path>
+                        <g id="Group" transform="translate(47.377778, 6.750000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="0.5">
+                            <path d="M7.39555556,4.725 C7.39555556,5.625 7.16444444,6.4125 6.58666667,6.975 C5.89333333,7.65 5.08444444,7.9875 4.04444444,7.9875 C3.00444444,7.9875 2.19555556,7.65 1.50222222,6.975 C0.808888889,6.3 0.462222222,5.5125 0.462222222,4.5 C0.462222222,3.4875 0.808888889,2.7 1.50222222,2.025 C2.19555556,1.35 3.00444444,1.0125 4.04444444,1.0125 C4.50666667,1.0125 4.96888889,1.125 5.43111111,1.35 C5.89333333,1.575 6.24,1.8 6.47111111,2.1375 L5.89333333,2.7 C5.43111111,2.1375 4.85333333,1.9125 4.04444444,1.9125 C3.35111111,1.9125 2.65777778,2.1375 2.19555556,2.7 C1.61777778,3.15 1.38666667,3.825 1.38666667,4.6125 C1.38666667,5.4 1.61777778,6.075 2.19555556,6.525 C2.77333333,6.975 3.35111111,7.3125 4.04444444,7.3125 C4.85333333,7.3125 5.43111111,7.0875 6.00888889,6.525 C6.35555556,6.1875 6.58666667,5.7375 6.58666667,5.175 L4.04444444,5.175 L4.04444444,4.275 L7.39555556,4.275 C7.39555556,4.3875 7.39555556,4.6125 7.39555556,4.725 Z" id="Shape"></path>
+                            <polygon id="Shape" points="12.7111111 1.9125 9.59111111 1.9125 9.59111111 4.05 12.48 4.05 12.48 4.8375 9.59111111 4.8375 9.59111111 6.975 12.7111111 6.975 12.7111111 7.875 8.66666667 7.875 8.66666667 1.125 12.7111111 1.125"></polygon><polygon id="Shape" points="16.5244444 7.875 15.6 7.875 15.6 1.9125 13.6355556 1.9125 13.6355556 1.125 18.4888889 1.125 18.4888889 1.9125 16.5244444 1.9125"></polygon>
+                            <polygon id="Shape" points="21.84 7.875 21.84 1.125 22.7644444 1.125 22.7644444 7.875"></polygon>
+                            <polygon id="Shape" points="26.6933333 7.875 25.7688889 7.875 25.7688889 1.9125 23.8044444 1.9125 23.8044444 1.125 28.5422222 1.125 28.5422222 1.9125 26.5777778 1.9125 26.5777778 7.875"></polygon>
+                            <path d="M37.6711111,6.975 C36.9777778,7.65 36.1688889,7.9875 35.1288889,7.9875 C34.0888889,7.9875 33.28,7.65 32.5866667,6.975 C31.8933333,6.3 31.5466667,5.5125 31.5466667,4.5 C31.5466667,3.4875 31.8933333,2.7 32.5866667,2.025 C33.28,1.35 34.0888889,1.0125 35.1288889,1.0125 C36.1688889,1.0125 36.9777778,1.35 37.6711111,2.025 C38.3644444,2.7 38.7111111,3.4875 38.7111111,4.5 C38.7111111,5.5125 38.3644444,6.3 37.6711111,6.975 Z M33.28,6.4125 C33.7422222,6.8625 34.4355556,7.2 35.1288889,7.2 C35.8222222,7.2 36.5155556,6.975 36.9777778,6.4125 C37.44,5.9625 37.7866667,5.2875 37.7866667,4.5 C37.7866667,3.7125 37.5555556,3.0375 36.9777778,2.5875 C36.5155556,2.1375 35.8222222,1.8 35.1288889,1.8 C34.4355556,1.8 33.7422222,2.025 33.28,2.5875 C32.8177778,3.0375 32.4711111,3.7125 32.4711111,4.5 C32.4711111,5.2875 32.7022222,5.9625 33.28,6.4125 Z" id="Shape"></path><polygon id="Shape" points="39.9822222 7.875 39.9822222 1.125 41.0222222 1.125 44.3733333 6.4125 44.3733333 6.4125 44.3733333 5.0625 44.3733333 1.125 45.2977778 1.125 45.2977778 7.875 44.3733333 7.875 40.7911111 2.3625 40.7911111 2.3625 40.7911111 3.7125 40.7911111 7.875"></polygon></g>
+                            <path d="M78.6933333,24.525 C75.92,24.525 73.7244444,26.55 73.7244444,29.3625 C73.7244444,32.0625 75.92,34.2 78.6933333,34.2 C81.4666667,34.2 83.6622222,32.175 83.6622222,29.3625 C83.6622222,26.4375 81.4666667,24.525 78.6933333,24.525 Z M78.6933333,32.175 C77.1911111,32.175 75.92,30.9375 75.92,29.25 C75.92,27.5625 77.1911111,26.325 78.6933333,26.325 C80.1955556,26.325 81.4666667,27.45 81.4666667,29.25 C81.4666667,30.9375 80.1955556,32.175 78.6933333,32.175 Z M67.9466667,24.525 C65.1733333,24.525 62.9777778,26.55 62.9777778,29.3625 C62.9777778,32.0625 65.1733333,34.2 67.9466667,34.2 C70.72,34.2 72.9155556,32.175 72.9155556,29.3625 C72.9155556,26.4375 70.72,24.525 67.9466667,24.525 Z M67.9466667,32.175 C66.4444444,32.175 65.1733333,30.9375 65.1733333,29.25 C65.1733333,27.5625 66.4444444,26.325 67.9466667,26.325 C69.4488889,26.325 70.72,27.45 70.72,29.25 C70.72,30.9375 69.4488889,32.175 67.9466667,32.175 Z M55.12,25.9875 L55.12,28.0125 L60.0888889,28.0125 C59.9733333,29.1375 59.5111111,30.0375 58.9333333,30.6 C58.24,31.275 57.0844444,32.0625 55.12,32.0625 C52,32.0625 49.6888889,29.7 49.6888889,26.6625 C49.6888889,23.625 52.1155556,21.2625 55.12,21.2625 C56.7377778,21.2625 58.0088889,21.9375 58.9333333,22.725 L60.4355556,21.2625 C59.1644444,20.1375 57.5466667,19.2375 55.2355556,19.2375 C51.0755556,19.2375 47.4933333,22.6125 47.4933333,26.6625 C47.4933333,30.7125 51.0755556,34.0875 55.2355556,34.0875 C57.5466667,34.0875 59.1644444,33.4125 60.5511111,31.95 C61.9377778,30.6 62.4,28.6875 62.4,27.225 C62.4,26.775 62.4,26.325 62.2844444,25.9875 L55.12,25.9875 L55.12,25.9875 Z M107.582222,27.5625 C107.12,26.4375 105.964444,24.525 103.422222,24.525 C100.88,24.525 98.8,26.4375 98.8,29.3625 C98.8,32.0625 100.88,34.2 103.653333,34.2 C105.848889,34.2 107.235556,32.85 107.697778,32.0625 L106.08,30.9375 C105.502222,31.725 104.808889,32.2875 103.653333,32.2875 C102.497778,32.2875 101.804444,31.8375 101.226667,30.825 L107.813333,28.125 L107.582222,27.5625 Z M100.88,29.1375 C100.88,27.3375 102.382222,26.325 103.422222,26.325 C104.231111,26.325 105.04,26.775 105.271111,27.3375 L100.88,29.1375 Z M95.4488889,33.75 L97.6444444,33.75 L97.6444444,19.6875 L95.4488889,19.6875 L95.4488889,33.75 Z M91.9822222,25.5375 L91.9822222,25.5375 C91.4044444,24.975 90.48,24.4125 89.3244444,24.4125 C86.8977778,24.4125 84.5866667,26.55 84.5866667,29.25 C84.5866667,31.95 86.7822222,33.975 89.3244444,33.975 C90.48,33.975 91.4044444,33.4125 91.8666667,32.85 L91.9822222,32.85 L91.9822222,33.525 C91.9822222,35.325 90.9422222,36.3375 89.3244444,36.3375 C88.0533333,36.3375 87.1288889,35.4375 86.8977778,34.65 L85.0488889,35.4375 C85.6266667,36.675 87.0133333,38.25 89.44,38.25 C91.9822222,38.25 94.0622222,36.7875 94.0622222,33.3 L94.0622222,24.75 L91.9822222,24.75 L91.9822222,25.5375 L91.9822222,25.5375 Z M89.44,32.175 C87.9377778,32.175 86.6666667,30.9375 86.6666667,29.25 C86.6666667,27.5625 87.9377778,26.325 89.44,26.325 C90.9422222,26.325 92.0977778,27.5625 92.0977778,29.25 C92.0977778,30.9375 90.9422222,32.175 89.44,32.175 Z M117.635556,19.6875 L112.435556,19.6875 L112.435556,33.75 L114.631111,33.75 L114.631111,28.4625 L117.635556,28.4625 C120.062222,28.4625 122.373333,26.775 122.373333,24.075 C122.373333,21.375 120.062222,19.6875 117.635556,19.6875 Z M117.751111,26.4375 L114.631111,26.4375 L114.631111,21.6 L117.751111,21.6 C119.368889,21.6 120.293333,22.95 120.293333,23.9625 C120.177778,25.2 119.253333,26.4375 117.751111,26.4375 Z M131.04,24.4125 C129.422222,24.4125 127.804444,25.0875 127.226667,26.55 L129.191111,27.3375 C129.653333,26.55 130.346667,26.325 131.155556,26.325 C132.311111,26.325 133.351111,27 133.466667,28.125 L133.466667,28.2375 C133.12,28.0125 132.195556,27.675 131.271111,27.675 C129.191111,27.675 127.111111,28.8 127.111111,30.825 C127.111111,32.7375 128.844444,33.975 130.693333,33.975 C132.195556,33.975 132.888889,33.3 133.466667,32.625 L133.582222,32.625 L133.582222,33.75 L135.662222,33.75 L135.662222,28.35 C135.431111,25.875 133.466667,24.4125 131.04,24.4125 Z M130.808889,32.175 C130.115556,32.175 129.075556,31.8375 129.075556,30.9375 C129.075556,29.8125 130.346667,29.475 131.386667,29.475 C132.311111,29.475 132.773333,29.7 133.351111,29.925 C133.12,31.275 131.964444,32.175 130.808889,32.175 Z M142.942222,24.75 L140.515556,30.825 L140.4,30.825 L137.857778,24.75 L135.546667,24.75 L139.36,33.3 L137.164444,38.025 L139.36,38.025 L145.253333,24.75 L142.942222,24.75 L142.942222,24.75 Z M123.528889,33.75 L125.724444,33.75 L125.724444,19.6875 L123.528889,19.6875 L123.528889,33.75 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <g id="Group" transform="translate(11.555556, 7.875000)" fill-rule="nonzero">
+                                <path d="M0.462222222,0.5625 C0.115555556,0.9 0,1.4625 0,2.1375 L0,27 C0,27.675 0.231111111,28.2375 0.577777778,28.575 L0.693333333,28.6875 L15.0222222,14.7375 L15.0222222,14.625 L15.0222222,14.5125 L0.462222222,0.5625 L0.462222222,0.5625 Z" id="Shape" fill="url(#linearGradient-1)"></path><path d="M19.6444444,19.4625 L14.9066667,14.85 L14.9066667,14.625 L14.9066667,14.5125 L19.6444444,9.9 L19.76,10.0125 L25.4222222,13.1625 C27.04,14.0625 27.04,15.525 25.4222222,16.425 L19.6444444,19.4625 L19.6444444,19.4625 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+                                <path d="M19.76,19.35 L14.9066667,14.625 L0.462222222,28.6875 C1.04,29.25 1.84888889,29.25 2.88888889,28.8 L19.76,19.35" id="Shape" fill="url(#linearGradient-3)"></path>
+                                <path d="M19.76,9.9 L2.88888889,0.5625 C1.84888889,5.55111512e-17 1.04,0.1125 0.462222222,0.675 L14.9066667,14.625 L19.76,9.9 Z" id="Shape" fill="url(#linearGradient-4)"></path><g transform="translate(0.000000, 19.125000)" fill="#000000" id="Shape"><path d="M19.6444444,0.1125 L2.88888889,9.3375 C1.96444444,9.9 1.15555556,9.7875 0.577777778,9.3375 L0.577777778,9.3375 L0.462222222,9.45 L0.462222222,9.45 L0.577777778,9.5625 L0.577777778,9.5625 C1.15555556,10.0125 1.96444444,10.125 2.88888889,9.5625 L19.6444444,0.1125 L19.6444444,0.1125 Z" opacity="0.2"></path>
+                                    <path d="M0.462222222,9.3375 C0.115555556,9 0,8.4375 0,7.7625 L0,7.875 C0,8.55 0.231111111,9.1125 0.577777778,9.45 L0.577777778,9.3375 L0.462222222,9.3375 Z" opacity="0.12"></path></g>
+                                    <path d="M25.4222222,16.0875 L19.6444444,19.2375 L19.76,19.35 L25.4222222,16.2 C26.2311111,15.75 26.5777778,15.1875 26.5777778,14.625 L26.5777778,14.625 C26.5777778,15.1875 26.1155556,15.6375 25.4222222,16.0875 Z" id="Shape" fill="#000000" opacity="0.12"></path>
+                                    <path d="M2.88888889,0.675 L25.4222222,13.1625 C26.1155556,13.6125 26.5777778,14.0625 26.5777778,14.625 L26.5777778,14.625 C26.5777778,14.0625 26.2311111,13.5 25.4222222,13.05 L2.88888889,0.5625 C1.27111111,-0.3375 0,0.3375 0,2.1375 L0,2.25 C0,0.5625 1.27111111,-0.225 2.88888889,0.675 Z" id="Shape" fill="#FFFFFF" opacity="0.25"></path></g></g></g></g></g></g></svg></a>
+&nbsp;
+<a href="#" data-kmt="1">
+    <svg width="156px" height="43px" viewBox="0 0 156 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+        <title>appstore</title><desc>Created with Sketch.</desc><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="img_store" transform="translate(0.000000, -1.000000)">
+                <g id="Group-4">
+                <g id="appstore" transform="translate(0.000000, 1.000000)">
+                <g id="Download_on_the_App_Store_Badge_US-UK_135x40">
+                    <g id="Group" fill-rule="nonzero">
+                    <path d="M150.222222,43 L5.77777778,43 C2.54222222,43 0,40.635 0,37.625 L0,5.375 C0,2.365 2.54222222,0 5.77777778,0 L150.222222,0 C153.457778,0 156,2.365 156,5.375 L156,37.625 C156,40.635 153.457778,43 150.222222,43 Z" id="Shape" fill="#4B505A"></path>
+                    <g transform="translate(13.866667, 6.625185)" fill="#FFFFFF" id="Shape">
+                        <path d="M20.9479111,15.2202588 C20.9144,11.6614301 23.9974222,9.9300484 24.1384,9.84944198 C22.3923556,7.41689481 19.6860444,7.08453136 18.7350222,7.05803062 C16.4620444,6.82946173 14.2572444,8.35767111 13.0993778,8.35767111 C11.9184,8.35767111 10.1353778,7.08011457 8.21368889,7.11765728 C5.7408,7.1540958 3.42737778,8.52219654 2.15857778,10.6466726 C-0.459911111,14.9784395 1.49297778,21.3441383 4.00168889,24.8455486 C5.25662222,26.5603674 6.72302222,28.4750459 8.6424,28.4076899 C10.5201778,28.3337086 11.2216,27.2637412 13.4876444,27.2637412 C15.7328889,27.2637412 16.3915556,28.4076899 18.3490667,28.3646262 C20.3643556,28.3337086 21.6331556,26.642078 22.8441778,24.9118005 C24.2944,22.9463289 24.8768,21.0106706 24.8999111,20.9112928 C24.8525333,20.8958341 20.9860444,19.4857738 20.9479111,15.2202588 Z"></path>
+                        <path d="M17.2501333,4.75467457 C18.2600889,3.54778667 18.9511111,1.90584494 18.7592889,0.239610864 C17.2975111,0.301445926 15.4694222,1.2057837 14.4167111,2.38617086 C13.4853333,3.42632494 12.6533333,5.13120593 12.8682667,6.73450074 C14.5103111,6.85154568 16.1962667,5.94279111 17.2501333,4.75467457 Z"></path></g>
+                        <g transform="translate(48.533333, 19.875556)" fill="#FFFFFF" id="Shape">
+                            <path d="M13.4564444,14.9110835 L10.8321778,14.9110835 L9.39466667,10.5947753 L4.39804444,10.5947753 L3.02871111,14.9110835 L0.473777778,14.9110835 L5.42417778,0.216422716 L8.48177778,0.216422716 L13.4564444,14.9110835 Z M8.96133333,8.78389136 L7.66133333,4.94680494 C7.52382222,4.55481481 7.26613333,3.63170568 6.88595556,2.17858173 L6.83973333,2.17858173 C6.68835556,2.80355753 6.44453333,3.72666667 6.10942222,4.94680494 L4.83253333,8.78389136 L8.96133333,8.78389136 L8.96133333,8.78389136 Z"></path>
+                            <path d="M26.1872,9.4828484 C26.1872,11.2848988 25.6776,12.7093136 24.6584,13.7549886 C23.7455111,14.6858272 22.6119111,15.1506943 21.2587556,15.1506943 C19.7981333,15.1506943 18.7488889,14.6493886 18.1098667,13.6467773 L18.0636444,13.6467773 L18.0636444,19.2284958 L15.6,19.2284958 L15.6,7.80336395 C15.6,6.67045728 15.5688,5.50773728 15.5087111,4.31520395 L17.6753778,4.31520395 L17.8128889,5.9946884 L17.8591111,5.9946884 C18.6807111,4.72927802 19.9
+    275556,4.09767704 21.6008,4.09767704 C22.9088889,4.09767704 24.0008889,4.59125333 24.8744889,5.57951012 C25.7504,6.568871
+    11 26.1872,7.8696158 26.1872,9.4828484 Z M23.6773333,9.5689758 C23.6773333,8.53765531 23.4346667,7.68742321 22.9470222,7.01827951 C22
+    .4143111,6.32042667 21.6990222,5.97150025 20.8023111,5.97150025 C20.1944889,5.97150025 19.6421333,6.16583901 19.1487111,6.54899556 C18.6541
+    333,6.93546469 18.3305778,7.44008296 18.1792,8.06505877 C18.1029333,8.35656691 18.0648,8.59507358 18.0648,8.78278716 L18.0648,10.5495032 C1
+    8.0648,11.3202331 18.3120889,11.9706054 18.8066667,12.5017244 C19.3012444,13.0328435 19.9437333,13.2978509 20.7341333,13.2978509 C21.662044
+    4,13.2978509 22.3842667,12.9555496 22.9008,12.2731556 C23.4184889,11.5896573 23.6773333,10.6886321 23.6773333,9.5689758 Z"></path>
+    
+    <path d="M38.9410667,9.4828484 C38.9410667,11.2848988 38.4314667,12.7093136 37.4111111,13.7549886 C36.4993778,14.6858272 35.3657778,15.1506943 34.01
+    26222,15.1506943 C32.552,15.1506943 31.5027556,14.6493886 30.8648889,13.6467773 L30.8186667,13.6467773 L30.8186667,19.2284958 L28.3550222,19.2284
+    958 L28.3550222,7.80336395 C28.3550222,6.67045728 28.3238222,5.50773728 28.2637333,4.31520395 L30.4304,4.31520395 L30.5679111,5.9946884 L30.6141333,5.9946884 C31.4345778,4.72927802 32.6814222,4.09767704 34.3558222,4.09767704 C35.6627556,4.09767704 36.7547556,4.59125333 37.6306667,5.57951012 C38.5031111,6.56887111 38.9410667,7.8696158 38.9410667,9.4828484 Z M36.4312,9.5689758 C36.4312,8.53765531 36.1873778,7.68742321 35.6997333,7.01827951 C35.1670222,6.32042667 34.4540444,5.97150025 33.5561778,5.97150025 C32.9472,5.97150025 32.396,6.16583901 31.9014222,6.54899556 C31.4068444,6.93546469 31.0844444,7.44008296 30.9330667,8.06505877 C30.8579556,8.35656691 30.8186667,8.59507358 30.8186667,8.78278716 L30.8186667,10.5495032 C30.8186667,11.3202331 31.0659556,11.9706054 31.5582222,12.5017244 C32.0528,13.0317393 32.6952889,13.2978509 33.488,13.2978509 C34.4159111,13.2978509 35.1381333,12.9555496 35.6546667,12.2731556 C36.1723556,11.5896573 36.4312,10.6886321 36.4312,9.5689758 Z"></path><path d="M53.2006222,10.7902183 C53.2006222,12.0401699 52.7464889,13.0571358 51.8347556,13.8422202 C50.8328889,14.7001817 49.4381333,15.1286104 47.6458667,15.1286104 C45.9911111,15.1286104 44.6645333,14.8238519 43.6603556,14.2132306 L44.2312,12.2510716 C45.3128,12.8760474 46.4995556,13.1896395 47.7926222,13.1896395 C48.7205333,13.1896395 49.4427556,12.9886756 49.9616,12.588956 C50.4781333,12.1892365 50.7358222,11.6525965 50.7358222,10.9834528 C50.7358222,10.3871862 50.5232,9.8847763 50.0968,9.47732741 C49.6727111,9.06987852 48.9643556,8.69113877 47.9752,8.34110815 C45.2827556,7.38156049 43.9376889,5.97591704 43.9376889,4.12749037 C43.9376889,2.91949827 44.4091556,1.92903309 45.3532444,1.15830321 C46.2938667,0.386469136 47.5488,0.00110419753 49.1180444,0.00110419753 C50.5174222,0.00110419753 51.6799111,0.234089877 52.6078222,0.698957037 L51.9919111,2.61805235 C51.1252444,2.16753975 50.1453333,1.94228346 49.0487111,1.94228346 C48.1820444,1.94228346 47.5048889,2.14656 47.0195556,2.55290469 C46.6093333,2.91618568 46.4036444,3.35896889 46.4036444,3.88346272 C46.4036444,4.46427062 46.6382222,4.94459654 47.1096889,5.3222321 C47.5199111,5.67115852 48.2652444,6.04879407 49.3468444,6.45624296 C50.6699556,6.96527802 51.6417778,7.56044049 52.2669333,8.24283457 C52.8897778,8.92302025 53.2006222,9.77435654 53.2006222,10.7902183 Z"></path><path d="M61.3461333,6.08192 L58.6305778,6.08192 L58.6305778,11.2263763 C58.6305778,12.5348504 59.1089778,13.1885353 60.0680889,13.1885353 C60.5083556,13.1885353 60.8735111,13.1520968 61.1624,13.0792198 L61.2305778,14.8669156 C60.7452444,15.0402746 60.1062222,15.1275062 59.3146667,15.1275062 C58.3416889,15.1275062 57.5813333,14.8437274 57.0324444,14.2772741 C56.4858667,13.7097165 56.2108444,12.7578983 56.2108444,11.4207151 L56.2108444,6.0797116 L54.5930667,6.0797116 L54.5930667,4.31299556 L56.2108444,4.31299556 L56.2108444,2.37292049 L58.6305778,1.67506765 L58.6305778,4.31299556 L61.3461333,4.31299556 L61.3461333,6.08192 Z"></path><path d="M73.5984889,9.5259121 C73.5984889,11.1546035 73.1108444,12.4917867 72.1378667,13.5374617 C71.1175111,14.6140543 69.7632,15.1506943 68.0749333,15.1506943 C66.4479111,15.1506943 65.1525333,14.6350341 64.1864889,13.6037136 C63.2204444,12.5723931 62.7374222,11.2705442 62.7374222,9.70147951 C62.7374222,8.05953778 63.2343111,6.71462519 64.2315556,5.66895012 C65.2264889,4.62217086 66.5692444,4.09878123 68.2575111,4.09878123 C69.8845333,4.09878123 71.1937778,4.61444148 72.1817778,5.64686617 C73.1270222,6.64837333 73.5984889,7.94138864 73.5984889,9.5259121 Z M71.0424,9.60210173 C71.0424,8.62488691 70.824,7.78680099 70.3814222,7.08784395 C69.8648889,6.24202864 69.1264889,5.82022519 68.1696889,5.82022519 C67.1793778,5.82022519 66.4271111,6.24313284 65.9105778,7.08784395 C65.468,7.78790519 65.2496,8.63924148 65.2496,9.64626963 C65.2496,10.6234844 65.468,11.4615704 65.9105778,12.1594232 C66.4432889,13.0052385 67.1874667,13.427042 68.1477333,13.427042 C69.0883556,13.427042 69.8267556,12.9964049 70.3594667,12.1373393 C70.8136,11.4251319 71.0424,10.5782123 71.0424,9.60210173 Z"></path><path d="M81.6064889,6.38557432 C81.3626667,6.34251062 81.1026667,6.32042667 80.8299556,6.32042667 C79.9632889,6.32042667 79.2930667,6.63291457 78.8216,7.25899457 C78.4113778,7.81109333 78.2056889,8.50894617 78.2056889,9.35144889 L78.2056889,14.9110835 L75.7432,14.9110835 L75.7663111,7.65208889 C75.7663111,6.43084642 75.7351111,5.31891951 75.6738667,4.31630815 L77.8197333,4.31630815 L77.9098667,6.34361481 L77.9780444,6.34361481 C78.2380444,5.64686617 78.6482667,5.08593383 79.2098667,4.66523457 C79.7587556,4.28649481 80.3515556,4.09767704 80.9905778,4.09767704 C81.2182222,4.09767704 81.4239111,4.1131358 81.6064889,4.14074074 L81.6064889,6.38557432 Z"></path><path d="M92.6247111,9.11183802 C92.6247111,9.53364148 92.5958222,9.88919309 92.5345778,10.179597 L85.1436444,10.179597 C85.1725333,11.2263763 85.5296,12.0269195 86.216,12.5790183 C86.8388444,13.0725946 87.6442667,13.3199348 88.6334222,13.3199348 C89.7277333,13.3199348 90.7261333,13.153201 91.624,12.8186291 L92.0099556,14.4528415 C90.9607111,14.8901037 89.7219556,15.1076306 88.2925333,15.1076306 C86.5730667,15.1076306 85.2233778,14.6239921 84.2411556,13.6578193 C83.2612444,12.6916464 82.7701333,11.3942143 82.7701333,9.76662716 C82.7701333,8.16885333 83.2265778,6.83829531 84.1406222,5.77716148 C85.0974222,4.64425481 86.3904889,4.07780148 88.0175111,4.07780148 C89.6156444,4.07780148 90.8255111,4.64425481 91.6471111,5.77716148 C92.2976889,6.67708247 92.6247111,7.79011358 92.6247111,9.11183802 Z M90.2754667,8.50121679 C90.2916444,7.80336395 90.1310222,7.2004721 89.7970667,6.69143704 C89.3706667,6.0366479 88.7154667,5.70980543 87.8337778,5.70980543 C87.0283556,5.70980543 86.3731556,6.02891852 85.8728,6.66935309 C85.4625778,7.17838815 85.2187556,7.78900938 85.1436444,8.50011259 L90.2754667,8.50011259 L90.2754667,8.50121679 Z"></path></g><g transform="translate(49.688889, 6.625185)" fill="#FFFFFF" id="Shape"><path d="M6.99111111,4.4267279 C6.99111111,5.7263684 6.5832,6.70468741 5.76853333,7.36168494 C5.01395556,7.96788938 3.9416,8.2715437 2.55262222,8.2715437 C1.86391111,8.2715437 1.27457778,8.24283457 0.781155556,8.1854163 L0.781155556,1.08432198 C1.4248,0.984944198 2.11813333,0.934151111 2.86693333,0.934151111 C4.19004444,0.934151111 5.18728889,1.2090963 5.85982222,1.75898667 C6.61324444,2.38064988 6.99111111,3.26952889 6.99111111,4.4267279 Z M5.71422222,4.45874963 C5.71422222,3.61624691 5.4808,2.97029136 5.01395556,2.51977877 C4.54711111,2.07037037 3.86533333,1.84511407 2.96746667,1.84511407 C2.58613333,1.84511407 2.26142222,1.86940642 1.99217778,1.92019951 L1.99217778,7.31862123 C2.14124444,7.34070519 2.41395556,7.35064296 2.81031111,7.35064296 C3.73706667,7.35064296 4.45235556,7.10440691 4.95617778,6.61193481 C5.46,6.11946272 5.71422222,5.40173432 5.71422222,4.45874963 Z"></path><path d="M13.7615111,5.56184296 C13.7615111,6.36238617 13.5223111,7.01827951 13.0439111,7.53283556 C12.5424,8.06174617 11.8779556,8.32564938 11.0482667,8.32564938 C10.2486222,8.32564938 9.61191111,8.07278815 9.13697778,7.56485728 C8.6632,7.05803062 8.42631111,6.41870025 8.42631111,5.64797037 C8.42631111,4.84190617 8.67013333,4.18049185 9.16008889,3.66704 C9.65004444,3.15358815 10.3087111,2.89631012 11.1384,2.89631012 C11.9380444,2.89631012 12.5805333,3.14917136 13.0670222,3.65599802 C13.5292444,4.14847012 13.7615111,4.7844879 13.7615111,5.56184296 Z M12.5054222,5.59938568 C12.5054222,5.11905975 12.3968,4.70719407 12.1807111,4.36378864 C11.9264889,3.94861037 11.5648,3.74102123 11.0944889,3.74102123 C10.608,3.74102123 10.2382222,3.94861037 9.984,4.36378864 C9.76675556,4.70719407 9.65928889,5.12568494 9.65928889,5.62036543 C9.65928889,6.10069136 9.76791111,6.51255704 9.984,6.85596247 C10.2463111,7.27114074 10.6114667,7.47872988 11.0829333,7.47872988 C11.5451556,7.47872988 11.908,7.26782815 12.1691556,6.84492049 C12.3933333,6.49488988 12.5054222,6.0797116 12.5054222,5.59938568 Z"></path><path d="M22.8395556,3.00231309 L21.1351111,8.20750025 L20.0257778,8.20750025 L19.3197333,5.9472079 C19.1406222,5.38296296 18.9950222,4.82203062 18.8817778,4.26551506 L18.8598222,4.26551506 C18.7546667,4.83748938 18.6090667,5.39731753 18.4218667,5.9472079 L17.6719111,8.20750025 L16.5498667,8.20750025 L14.9471111,3.00231309 L16.1916444,3.00231309 L16.8075556,5.47681975 C16.9566222,6.06204444 17.0791111,6.6196642 17.1773333,7.14747062 L17.1992889,7.14747062 C17.2894222,6.71241679 17.4384889,6.15810963 17.6488,5.48786173 L18.4218667,3.00341728 L19.4087111,3.00341728 L20.1494222,5.43486025 C20.3285333,6.02781432 20.4741333,6.59868444 20.5862222,7.14857481 L20.6197333,7.14857481 C20.7017778,6.61303901 20.8254222,6.04216889 20.9895111,5.43486025 L21.6504889,3.00341728 L22.8395556,3.00341728 L22.8395556,3.00231309 Z"></path><path d="M29.1176889,8.20750025 L27.9066667,8.20750025 L27.9066667,5.22616691 C27.9066667,4.30747457 27.5415111,3.8481284 26.8088889,3.8481284 C26.4495111,3.8481284 26.1594667,3.97400691 25.9341333,4.22686815 C25.7111111,4.47972938 25.5978667,4.77786272 25.5978667,5.11905975 L25.5978667,8.20639605 L24.3868444,8.20639605 L24.3868444,4.48966716 C24.3868444,4.03252938 24.3718222,3.53674469 24.3429333,3.00010469 L25.4072,3.00010469 L25.4638222,3.81389827 L25.4973333,3.81389827 C25.6383111,3.56103704 25.8486222,3.3523437 26.1248,3.18560988 C26.4529778,2.99127111 26.8204444,2.89299753 27.2225778,2.89299753 C27.7310222,2.89299753 28.1539556,3.04979358 28.4902222,3.36448988 C28.9085333,3.74985481 29.1176889,4.32514173 29.1176889,5.08924642 L29.1176889,8.20750025 L29.1176889,8.20750025 Z"></path><polygon points="32.4572444 8.20750025 31.2473778 8.20750025 31.2473778 0.613933827 32.4572444 0.613933827"></polygon><path d="M39.5870222,5.56184296 C39.5870222,6.36238617 39.3478222,7.01827951 38.8694222,7.53283556 C38.3679111,8.06174617 37.7023111,8.32564938 36.8737778,8.32564938 C36.0729778,8.32564938 35.4362667,8.07278815 34.9624889,7.56485728 C34.4887111,7.05803062 34.2518222,6.41870025 34.2518222,5.64797037 C34.2518222,4.84190617 34.4956444,4.18049185 34.9856,3.66704 C35.4755556,3.15358815 36.1342222,2.89631012 36.9627556,2.89631012 C37.7635556,2.89631012 38.4048889,3.14917136 38.8925333,3.65599802 C39.3547556,4.14847012 39.5870222,4.7844879 39.5870222,5.56184296 Z M38.3297778,5.59938568 C38.3297778,5.11905975 38.2211556,4.70719407 38.0050667,4.36378864 C37.752,3.94861037 37.3891556,3.74102123 36.92,3.74102123 C36.4323556,3.74102123 36.0625778,3.94861037 35.8095111,4.36378864 C35.5922667,4.70719407 35.4848,5.12568494 35.4848,5.62036543 C35.4848,6.10069136 35.5934222,6.51255704 35.8095111,6.85596247 C36.0718222,7.27114074 36.4369778,7.47872988 36.9084444,7.47872988 C37.3706667,7.47872988 37.7323556,7.26782815 37.9935111,6.84492049 C38.2188444,6.49488988 38.3297778,6.0797116 38.3297778,5.59938568 Z"></path><path d="M45.448,8.20750025 L44.3606222,8.20750025 L44.2704889,7.60792099 L44.2369778,7.60792099 C43.8648889,8.08603852 43.3344889,8.32564938 42.6457778,8.32564938 C42.1315556,8.32564938 41.7155556,8.16774914 41.4024,7.85415704 C41.1181333,7.56927407 40.976,7.21482667 40.976,6.79412741 C40.976,6.15810963 41.2533333,5.67336691 41.8114667,5.33769086 C42.3684444,5.00201481 43.1519111,4.83748938 44.1607111,4.84521877 L44.1607111,4.74804938 C44.1607111,4.06234272 43.784,3.72004148 43.0294222,3.72004148 C42.4920889,3.72004148 42.0183111,3.84923259 41.6092444,4.10540642 L41.3631111,3.34571852 C41.8692444,3.04648099 42.4944,2.89631012 43.2316444,2.89631012 C44.6552889,2.89631012 45.3694222,3.61403852 45.3694222,5.04949531 L45.3694222,6.96638222 C45.3694222,7.48645926 45.396,7.90053333 45.448,8.20750025 Z M44.1907556,6.41870025 L44.1907556,5.61594864 C42.8549333,5.59386469 42.1870222,5.94389531 42.1870222,6.6649363 C42.1870222,6.93656889 42.2632889,7.13974123 42.4192889,7.27555753 C42.5752889,7.41137383 42.7740444,7.47872988 43.0109333,7.47872988 C43.2767111,7.47872988 43.5251556,7.39812346 43.7516444,7.23801481 C43.9792889,7.07680198 44.1191111,6.87252543 44.1711111,6.62187259 C44.1838222,6.56555852 44.1907556,6.49709827 44.1907556,6.41870025 Z"></path><path d="M52.3293333,8.20750025 L51.2546667,8.20750025 L51.1980444,7.37162272 L51.1645333,7.37162272 C50.8213333,8.00764049 50.2366222,8.32564938 49.4150222,8.32564938 C48.7586667,8.32564938 48.2120889,8.07941333 47.7787556,7.58694123 C47.3454222,7.09446914 47.1293333,6.45513877 47.1293333,5.67005432 C47.1293333,4.8275516 47.3639111,4.14515753 47.8353778,3.6239763 C48.2918222,3.13812938 48.8511111,2.89520593 49.5167111,2.89520593 C50.2481778,2.89520593 50.7600889,3.1304 51.0512889,3.60189235 L51.0744,3.60189235 L51.0744,0.613933827 L52.2865778,0.613933827 L52.2865778,6.80516938 C52.2865778,7.31199605 52.3004444,7.7790716 52.3293333,8.20750025 Z M51.0744,6.01235556 L51.0744,5.1444563 C51.0744,4.99428543 51.0628444,4.8728237 51.0408889,4.78007111 C50.9727111,4.50181333 50.8259556,4.26772346 50.6029333,4.07890568 C50.3776,3.8900879 50.1060444,3.79512691 49.7928889,3.79512691 C49.3410667,3.79512691 48.9874667,3.96627753 48.7274667,4.30968296 C48.4697778,4.6530884 48.3392,5.09145481 48.3392,5.62699062 C48.3392,6.14154667 48.4628444,6.55893333 48.7112889,6.88025481 C48.9736,7.22255605 49.3272,7.39370667 49.7697778,7.39370667 C50.1672889,7.39370667 50.4850667,7.25126519 50.7265778,6.96527802 C50.96,6.70137481 51.0744,6.38336593 51.0744,6.01235556 Z"></path><path d="M62.6865778,5.56184296 C62.6865778,6.36238617 62.4473778,7.01827951 61.9689778,7.53283556 C61.4674667,8.06174617 60.8041778,8.32564938 59.9733333,8.32564938 C59.1748444,8.32564938 58.5381333,8.07278815 58.0620444,7.56485728 C57.5882667,7.05803062 57.3513778,6.41870025 57.3513778,5.64797037 C57.3513778,4.84190617 57.5952,4.18049185 58.0851556,3.66704 C58.5751111,3.15358815 59.2337778,2.89631012 60.0646222,2.89631012 C60.8631111,2.89631012 61.5067556,3.14917136 61.9920889,3.65599802 C62.4543111,4.14847012 62.6865778,4.7844879 62.6865778,5.56184296 Z M61.4316444,5.59938568 C61.4316444,5.11905975 61.3230222,4.70719407 61.1069333,4.36378864 C60.8515556,3.94861037 60.4910222,3.74102123 60.0195556,3.74102123 C59.5342222,3.74102123 59.1644444,3.94861037 58.9090667,4.36378864 C58.6918222,4.70719407 58.5843556,5.12568494 58.5843556,5.62036543 C58.5843556,6.10069136 58.6929778,6.51255704 58.9090667,6.85596247 C59.1713778,7.27114074 59.5365333,7.47872988 60.008,7.47872988 C60.4702222,7.47872988 60.8342222,7.26782815 61.0953778,6.84492049 C61.3184,6.49488988 61.4316444,6.0797116 61.4316444,5.59938568 Z"></path><path d="M69.1981333,8.20750025 L67.9882667,8.20750025 L67.9882667,5.22616691 C67.9882667,4.30747457 67.6231111,3.8481284 66.8893333,3.8481284 C66.5299556,3.8481284 66.2399111,3.97400691 66.0157333,4.22686815 C65.7915556,4.47972938 65.6794667,4.77786272 65.6794667,5.11905975 L65.6794667,8.20639605 L64.4672889,8.20639605 L64.4672889,4.48966716 C64.4672889,4.03252938 64.4534222,3.53674469 64.4245333,3.00010469 L65.4876444,3.00010469 L65.5442667,3.81389827 L65.5777778,3.81389827 C65.7199111,3.56103704 65.9302222,3.3523437 66.2052444,3.18560988 C66.5345778,2.99127111 66.9008889,2.89299753 67.3041778,2.89299753 C67.8114667,2.89299753 68.2344,3.04979358 68.5706667,3.36448988 C68.9901333,3.74985481 69.1981333,4.32514173 69.1981333,5.08924642 L69.1981333,8.20750025 L69.1981333,8.20750025 Z"></path><path d="M77.3482667,3.86910815 L76.0147556,3.86910815 L76.0147556,6.39772049 C76.0147556,7.04036346 76.2516444,7.36168494 76.7208,7.36168494 C76.9380444,7.36168494 77.1183111,7.34401778 77.2604444,7.30757926 L77.2916444,8.1854163 C77.0524444,8.2715437 76.7381333,8.31460741 76.3510222,8.31460741 C75.8726222,8.31460741 75.5005333,8.17547852 75.2312889,7.89722074 C74.9608889,7.61896296 74.8268444,7.15078321 74.8268444,6.49378568 L74.8268444,3.86910815 L74.0306667,3.86910815 L74.0306667,3.00231309 L74.8268444,3.00231309 L74.8268444,2.04828642 L76.0136,1.70598519 L76.0136,3.00120889 L77.3471111,3.00120889 L77.3471111,3.86910815 L77.3482667,3.86910815 Z"></path><path d="M83.7592889,8.20750025 L82.5471111,8.20750025 L82.5471111,5.24825086 C82.5471111,4.31520395 82.1819556,3.8481284 81.4504889,3.8481284 C80.8888889,3.8481284 80.5052444,4.11865679 80.2949333,4.65971358 C80.2591111,4.77344593 80.2383111,4.91257481 80.2383111,5.07599605 L80.2383111,8.20639605 L79.0284444,8.20639605 L79.0284444,0.613933827 L80.2383111,0.613933827 L80.2383111,3.75095901 L80.2614222,3.75095901 C80.6427556,3.18008889 81.1893333,2.89520593 81.8976889,2.89520593 C82.3992,2.89520593 82.8140444,3.05200198 83.1433778,3.36669827 C83.5536,3.7586884 83.7592889,4.34170469 83.7592889,5.11243457 L83.7592889,8.20750025 L83.7592889,8.20750025 Z"></path><path d="M90.3725333,5.35867062 C90.3725333,5.56625975 90.3563556,5.74072296 90.3274667,5.88316444 L86.6955556,5.88316444 C86.7117333,6.39772049 86.8850667,6.78971062 87.2213333,7.06134321 C87.5287111,7.30426667 87.9250667,7.4257284 88.4104,7.4257284 C88.9477333,7.4257284 89.4376889,7.34401778 89.8791111,7.17949235 L90.0686222,7.98334815 C89.5520889,8.19756247 88.9442667,8.30466963 88.2405333,8.30466963 C87.3969778,8.30466963 86.7325333,8.06726716 86.2518222,7.59246222 C85.7688,7.11765728 85.5296,6.48053531 85.5296,5.6810963 C85.5296,4.89601185 85.7526222,4.24232691 86.2021333,3.72114568 C86.6712889,3.16463012 87.3056889,2.88637235 88.1064889,2.88637235 C88.8899556,2.88637235 89.4850667,3.16463012 89.8872,3.72114568 C90.2119111,4.16282469 90.3725333,4.70940247 90.3725333,5.35867062 Z M89.2169778,5.05943309 C89.2262222,4.71602765 89.1464889,4.42010272 88.9824,4.17055407 C88.7720889,3.84923259 88.452,3.68801975 88.0186667,3.68801975 C87.6234667,3.68801975 87.3010667,3.8448158 87.0549333,4.1595121 C86.8538667,4.41016494 86.7348444,4.70940247 86.6955556,5.05943309 L89.2169778,5.05943309 Z"></path></g></g></g></g></g></g></g></svg></a><ul class="footer-social"><li class="d-inline-block mr-1 p-2"><a rel="nofollow noreferrer noopener" aria-label="فيسبوك" target="_blank" href="https://www.facebook.com/yallagomla/" data-kmt="1"><i class="fab fa-facebook"></i></a></li><li class="d-inline-block mr-1 p-2"><a rel="nofollow noreferrer noopener" aria-label="يوتيوب" target="_blank" href="https://www.youtube.com/channel/UCEKjsc5-wKHZfNQ1CZ40Osw?view_as=subscriber" data-kmt="1"><i class="fab fa-youtube"></i></a></li><li class="d-xs-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block mr-1 p-2"><a rel="nofollow noreferrer noopener" target="_blank" aria-label="واتساب" href="https://web.whatsapp.com/send?phone=+201555080852&amp;text=%20%D9%8A%D9%84%D8%A7%20%D8%AC%D9%85%D9%84%D9%87" data-kmt="1"><i class="fab fa-whatsapp"></i></a></li><li class="d-inline-block d-sm-inline-block d-md-inline-block d-lg-none d-xl-none mr-1 p-2"><a rel="nofollow noreferrer noopener" target="_blank" aria-label="واتساب" href="whatsapp://send?phone=+201555080852&amp;text=%D9%8A%D9%84%D8%A7%20%D8%AC%D9%85%D9%84%D9%87" data-kmt="1"><i class="fab fa-whatsapp"></i></a></li></ul></div><div class="col-xs-12 col-sm-2"><ul class="footer-list"><li class="mb-2"><a aria-label="حكايتنا" href="https://www.yalla-gomla.com/our-story" data-kmt="1"> حكايتنا </a></li><li class="mb-2"><a aria-label="ليه يلا جمله" href="https://www.yalla-gomla.com/why-us" data-kmt="1"> ليه يلا جمله </a></li><!--<li class="mb-2"><a aria-label="&#1575;&#1590;&#1601; &#1578;&#1580;&#1575;&#1585;&#1578;&#1603;" href="https://www.yalla-gomla.com/join-us"> &#1575;&#1590;&#1601; &#1578;&#1580;&#1575;&#1585;&#1578;&#1603; </a></li>--><li class="mb-2"><a href="https://test.yalla-gomla.com/ar/join" data-kmt="1"> اضف تجارتك</a></li><li class="mb-2"><a aria-label="أسئلة شائعة" href="https://www.yalla-gomla.com/faqs" data-kmt="1"> أسئلة شائعة </a></li><!--<li class="mb-2"><a aria-label="&#1575;&#1578;&#1589;&#1604; &#1576;&#1606;&#1575;" href="https://www.yalla-gomla.com/contact"> &#1575;&#1578;&#1589;&#1604; &#1576;&#1606;&#1575; </a></li>--><li class="mb-2"><a target="_blank" href="https://web.whatsapp.com/send?phone=+200%20155%20508%200852&amp;text=%D9%8A%D9%84%D8%A7%20%D8%AC%D9%85%D9%84%D9%87" data-kmt="1">احصل
+علي المساعده </a></li><li class="mb-2"><a aria-label="الاحكام والشروظ" href="https://www.yalla-gomla.com/terms-conditions" data-kmt="1"> الاحكام والشروظ </a></li><li class="mb-2"><a aria-label="سياسة الخصوصية" href="https://www.yalla-gomla.com/privacy-policy" data-kmt="1"> سياسة الخصوصية </a></li></ul></div><div class="col-xs-12 col-sm-4"><h4 class="text-white pb-2">الأقسام : </h4><div class="row"><div class="col-xs-12 col-sm-6"><ul class="footer-list"><li class="mb-2"><a aria-label="أدوات منزلية" href="https://www.yalla-gomla.com/sections/7-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9" data-kmt="1"> أدوات منزلية </a></li><li class="mb-2"><a aria-label="ملابس ومستلزماتها" href="https://www.yalla-gomla.com/sections/9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA%D9%87%D8%A7" data-kmt="1"> ملابس ومستلزماتها </a></li><li class="mb-2"><a aria-label="العاب ومستلزمات الاطفال" href="https://www.yalla-gomla.com/sections/4-%D8%A7%D9%84%D8%B9%D8%A7%D8%A8-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84" data-kmt="1"> العاب ومستلزمات الاطفال </a></li><li class="mb-2"><a aria-label="هدايا" href="https://www.yalla-gomla.com/sections/6-%D9%87%D8%AF%D8%A7%D9%8A%D8%A7" data-kmt="1"> هدايا </a></li><li class="mb-2"><a aria-label="اضاءه وديكورات" href="https://www.yalla-gomla.com/sections/8-%D8%A7%D8%B6%D8%A7%D8%A1%D9%87-%D9%88%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA" data-kmt="1"> اضاءه وديكورات </a></li><li class="mb-2"><a aria-label="اكسسوارات حريمي" href="https://www.yalla-gomla.com/sections/1-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AD%D8%B1%D9%8A%D9%85%D9%8A" data-kmt="1"> اكسسوارات حريمي </a></li></ul></div><div class="col-xs-12 col-sm-6"><ul class="footer-list"><li class="mb-2"><a aria-label="اكسسوارات رجالي" href="https://www.yalla-gomla.com/sections/14-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B1%D8%AC%D8%A7%D9%84%D9%8A" data-kmt="1"> اكسسوارات رجالي </a></li><li class="mb-2"><a aria-label="مستحضرات تجميل وعطور" href="https://www.yalla-gomla.com/sections/5-%D9%85%D8%B3%D8%AA%D8%AD%D8%B6%D8%B1%D8%A7%D8%AA-%D8%AA%D8%AC%D9%85%D9%8A%D9%84-%D9%88%D8%B9%D8%B7%D9%88%D8%B1" data-kmt="1"> مستحضرات تجميل وعطور </a></li><li class="mb-2"><a aria-label="منتجات جلدية" href="https://www.yalla-gomla.com/sections/3-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%AC%D9%84%D8%AF%D9%8A%D8%A9" data-kmt="1"> منتجات جلدية </a></li><li class="mb-2"><a aria-label="أدوات مكتبية" href="https://www.yalla-gomla.com/sections/12-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9" data-kmt="1"> أدوات مكتبية </a></li></ul></div></div></div><div class="col-xs-12 col-sm-2"><ul class="footer-list"><li class="mb-2"><a target="_blank" aria-label="المدونة" href="https://www.yalla-gomla.com/blog" data-kmt="1"> المدونة </a></li></ul></div></div><div class="copy-right pt-4 pb-2"> جميع حقوق محفوظة ©<a aria-label="يلا جمله" href="https://www.yalla-gomla.com" data-kmt="1"> يلا جمله</a></div></div></footer>
+
+    <!--------------------------- end footer --------------------->
+
+
+
+
+    <a class="scrollTop" href="#"><i class="fa fa-chevron-up" >
+    </i></a>    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+   <script src="js/all.js"></script>
+   <script src="js/main.js"></script>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        
+        const scrollTop = document.querySelector(".scrollTop"); 
+	       
+	       window.addEventListener("scroll", () => {
+	           if (window.pageYOffset > 100){
+	               scrollTop.classList.add("active");
+	           } else{
+	               scrollTop.classList.remove("active");  
+	           }
+	       })
+
+
+
+        var swiperPaner = new Swiper(".mySwiper--paner", {
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+
+
+
+
+
+
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+
+
+
+
+
+        // ----------
+        var swiperSections = new Swiper(".mySwiper--sections", {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                800: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                921: {
+                    slidesPerView: 6,
+                    spaceBetween: 40
+                }
+            }
+
+        });
+        // ----------
+        var swiperAd = new Swiper(".mySwiper--ad", {
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+        // ----------
+        var swiperVideo = new Swiper(".mySwiper--video", {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+
+
+                699: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                800: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                921: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+
+            }
+
+        });
+
+
+const container=document.querySelector('.rating');
+const items=container.querySelectorAll('.rating-item');
+container.onclick= e =>{
+     const elClass =e.target.classList;
+     if(!elClass.contains('active')) {
+         items.forEach(
+             item => item.classList.remove('active'));
+
+console.log(e.target.getAttribute("data-rate"));
+elClass.add('active');
+
+     }
+
+
+};
+
+
+
+
+
+
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
+
+
+    </script>
+</body>
+</html>

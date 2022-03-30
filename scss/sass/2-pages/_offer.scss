@@ -11,6 +11,8 @@
         overflow: hidden;
         position: relative;
         display: block;
+        
+        
         .overlay {
           position: absolute;
           width: 100%;
@@ -94,7 +96,7 @@
       background: none;
       cursor: pointer;
       text-decoration: underline;
-      color: #00f;
+      color: rgb(255, 94, 0);
       outline: none;
       padding: 0;
     }

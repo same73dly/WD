@@ -1,7 +1,7 @@
  
 .container{
-  width: 55%;
-  margin-top: 37px
+  width: 100%;
+  margin-top: 27px
 }
 
 
@@ -9,10 +9,19 @@
 @media screen and (max-width: 768px) {
   .container {
    width:100%;
-   margin-top: 0px
+   margin-top: 27px
 
   }
 }
+
+
+.hhhh{
+font-size: 19px;
+font-weight: 700;
+}
+
+
+
 
 .col-md-6{
   max-width: 50%;
@@ -130,86 +139,145 @@
 
  
 .libox{
-  align-content: center;
-    font-size: 50px;
-    align-items: center;
-    margin-top: -52%;
-    color: #ffffff;
-    font-weight: 600;
-    margin-right: 40%;
-    z-index: -1;
-    text-shadow: #000 -3px 3px 4px;
+  margin-top: -71%;
+  color: #ffffff;
+  padding: 26% 35%;
+  background-color: #000000a8;
+  z-index: 1;
+  position: absolute;
+  text-shadow: #000 -3px 3px 4px;
+
 }
 
 
 
 
-@media screen and (max-width: 380px){
+
+@media screen and (max-width: 1024px){
+  .libox {
+margin-top: -78%;
+color: #ffffff;
+padding: 27% 35%;
+background-color: #000000a8;
+z-index: 1;
+position: absolute;
+text-shadow: #000 -3px 3px 4px;
+
+  }}
+
+
+
+@media screen and (max-width: 990px){
+  .libox {
+    margin-top: -78%;
+    color: #ffffff;
+    padding: 26% 35%;
+    background-color: #000000a8;
+    z-index: 1;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
+
+
+  }}
+
+
+  
+@media screen and (max-width: 920px){
+  .libox {
+    margin-top: -78%;
+    color: #ffffff;
+    padding: 25% 34%;
+    background-color: #000000a8;
+    z-index: 1;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
+
+  }}
+  
+
+@media screen and (max-width: 800px){
 .libox {
-    align-content: center;
-    font-size: 27px;
-    align-items: center;
-    margin-top: -65%;
-    color: #ffffff;
-    font-weight: 600;
-    margin-right: 25%;
-    z-index: -1;
-    text-shadow: #000 -3px 3px 4px;
-     }
-}
+  align-items: center;
+  margin-top: -77%;
+  color: #ffffff;
+  padding: 24% 33%;
+  position: absolute;
+  background-color: #000000a8;
+  z-index: 1;
+  text-shadow: #000 -3px 3px 4px;
+}}
 
 
-@media screen and (max-width: 400px) {
+
+
+
+@media screen and (max-width: 720px) {
   .libox {
-    align-content: center;
-    font-size: 15px;
     align-items: center;
-    margin-top: -55%;
+    margin-top: -77%;
+    position: absolute;
+    background-color: #000000a8;
     color: #ffffff;
-    font-weight: 600;
-    z-index: -1;
-    margin-right: 14px;
+    padding: 21% 30%;
+    z-index: 1;
     text-shadow: #000 -3px 3px 4px;
 
   }
 }
-
-
-
-
-@media screen and (max-width: 440px) {
-  .libox {
-    align-content: center;
-    font-size: 27px;
-    align-items: center;
-    margin-top: -63%;
-    color: #ffffff;
-    font-weight: 600;
-    margin-right: 24px;
-    z-index: -1;
-    text-shadow: #000 -3px 3px 4px;
-
-  }
-}
-
-
 
 
 
 @media screen and (max-width: 600px) {
   .libox {
-    align-content: center;
-    font-size: 35px;
-    align-items: center;
-    margin-top: -65%;
+    margin-top: -76%;
     color: #ffffff;
-    font-weight: 600;
-    margin-right: 25%;
-    z-index: -1;
+    padding: 23% 33%;
+    position: absolute;
     text-shadow: #000 -3px 3px 4px;
+    background-color: #000000a8;
+    font-size: 27px;
 
   }
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 490px) {
+  .libox {
+    margin-top: -76%;
+    color: #ffffff;
+    padding: 21% 29%;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
+    background-color: #000000a8;
+    text-shadow: #000 -3px 3px 4px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 380px){
+  .libox {
+    margin-top: -76%;
+    color: #ffffff;
+    padding: 22% 33%;
+    font-size: 17px;
+    z-index: 1;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
+       }
+  }
+  
+  
+
+
+
 
 
 

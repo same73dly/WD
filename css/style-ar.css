@@ -242,9 +242,23 @@ margin-left: 27px;
 
 #wrapper {
   width: 100%;
-  max-width: 964px;
   position: relative;
   direction: ltr;
+  margin-top: 22px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 2080px){
+  #wrapper {
+  margin-top: 22px;
+    width: 98%;
+  position: relative;
+  direction: ltr;
+}
 }
 
 #carousel {

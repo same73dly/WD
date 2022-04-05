@@ -36,9 +36,8 @@ font-weight: 700;
 
 
 .col-md-6{
-  max-width: 50%;
+  max-width: 49%;
  padding: 0px 2px;
- 
  margin:0px 0px;
 }
 
@@ -149,34 +148,30 @@ font-weight: 700;
 
 
 
- 
-.libox{
-  margin-top: -71%;
-  color: #ffffff;
-  padding: 26% 35%;
-  background-color: #000000a8;
-  z-index: 1;
-  position: absolute;
-  text-shadow: #000 -3px 3px 4px;
 
-}
-
-
-
-
-@media screen and (max-width: 2080px){
+@media screen and (max-width: 2560px){
   .libox {
-margin-top: -71%;
-color: #ffffff;
-padding: 30% 40%;
-background-color: #000000a8;
-z-index: 1;
-position: absolute;
-text-shadow: #000 -3px 3px 4px;
-
+    margin-top: -49%;
+    color: #ffffff;
+    padding: 18% 39%;
+    background-color: #000000a8;
+    z-index: 1;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
   }}
 
 
+ 
+.libox{
+  margin-top: -76%;
+    color: #ffffff;
+    padding: 32% 40%;
+    background-color: #000000a8;
+    z-index: 1;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
+
+}
 
 
 
@@ -236,9 +231,22 @@ text-shadow: #000 -3px 3px 4px;
 }}
 
 
+@media screen and (max-width: 768px) {
+  .libox {
+   
+align-items: center;
+margin-top: -77%;
+color: #ffffff;
+padding: 27% 36%;
+position: absolute;
+background-color: #000000a8;
+z-index: 1;
+text-shadow: #000 -3px 3px 4px;
 
 
 
+  }
+}
 @media screen and (max-width: 720px) {
   .libox {
     align-items: center;
@@ -278,7 +286,7 @@ text-shadow: #000 -3px 3px 4px;
   .libox {
     margin-top: -76%;
     color: #ffffff;
-    padding: 21% 29%;
+    padding: 24% 33%;
     position: absolute;
     text-shadow: #000 -3px 3px 4px;
     background-color: #000000a8;
@@ -292,9 +300,9 @@ text-shadow: #000 -3px 3px 4px;
 
 @media screen and (max-width: 380px){
   .libox {
-    margin-top: -76%;
+    margin-top: -88%;
     color: #ffffff;
-    padding: 30% 40%;
+    padding: 34% 37%;
     font-size: 17px;
     z-index: 1;
     position: absolute;

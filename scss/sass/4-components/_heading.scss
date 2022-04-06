@@ -1,0 +1,41 @@
+.elementor-divider {
+  .elementor-divider-seprator {
+    width: 70px;
+    height: 5px;
+    background-color: $orange;
+    display: flex;
+    border-radius: 5px;
+  }
+  .seprator--center {
+    margin: 0 auto;
+  }
+}
+
+.page-title {
+  margin-top: 100px;
+  display: inline-block;
+
+  .title-content {
+    display: flex;
+    background: $orange2;
+    color: $white;
+    padding: 10px;
+    border-end-end-radius: 8px;
+    border-start-end-radius: 8px;
+    svg {
+      width: 35px;
+      height: 35px;
+      path,polygon {
+        fill: $white !important;
+
+      }
+    }
+    .title-text {
+      margin: 0 15px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+}

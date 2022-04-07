@@ -995,6 +995,7 @@ display: grid;
     color: #616161;
     font-size: 22px;
     margin: 0 0px;
+    float: left;
 }
 .stars label::before{
 content: "\2605";

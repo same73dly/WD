@@ -150,7 +150,7 @@ display: grid;
 @media screen and (max-width: 630px){
 #content {
     display: grid;
-    grid-gap: 31PX;
+    grid-gap: 31px;
     grid-auto-flow: column;
     margin: auto;
     width: 100%;
@@ -180,7 +180,7 @@ display: grid;
 @media screen and (max-width: 440px){
 #content {
     display: grid;
-    grid-gap: 0PX;
+    grid-gap: 0px;
     grid-auto-flow: column;
     margin: auto;
     width: 100%;
@@ -343,11 +343,19 @@ display: grid;
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  direction: rtl;
 }
 
 #carousel::-webkit-scrollbar {
   height: 0;
 }
+
+
+
+
+
+
+
 
 #prev,
 #next {
@@ -364,6 +372,34 @@ display: grid;
   position: absolute;
 }
 
+
+
+
+
+
+@media screen and (max-width: 500px){
+  
+    
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0px;
+  background-color: #57575700;
+  border-radius: 0%;
+  outline: 0;
+  font-size: 0px;
+  cursor: pointer;
+  position: absolute;
+} 
+  }
+
+
+
+
 #prev {
   top: 50%;
   left: 0;
@@ -371,11 +407,47 @@ display: grid;
   display: none;
 }
 
+
+
+
+@media screen and (max-width: 500px){
+
+  #prev {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+  }  
+ 
+    }
+
+
+
+
+
 #next {
   top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
 }
+
+
+
+
+@media screen and (max-width: 500px){
+
+  #next {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+  }  
+ 
+    }
+
+
 
 .item {
     width: 246px;
@@ -413,6 +485,7 @@ display: grid;
     margin: 0px 20px; 
     inline-size: max-content;  
     display: inline-grid;
+    direction: initial;
 }
 
 @media screen and (max-width: 730px){

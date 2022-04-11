@@ -1,14 +1,16 @@
  
-.container{
+.contain{
   width: 60%;
-  margin-top: 27px
+  margin-top: 27px;
+  margin-right: 17%;
 }
 
 
 
 @media screen and (max-width: 768px) {
-  .container {
+  .contain {
    width:80%;
+   margin-right: 7%;
    margin-top: 27px
 
   }
@@ -18,8 +20,8 @@
 
 
 @media screen and (max-width: 400px) {
-  .container {
-   width:90%;
+  .contain {
+   width:87%;
    margin-top: 27px
 
   }

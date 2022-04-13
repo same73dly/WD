@@ -149,6 +149,17 @@ font-weight: 700;
 }
 
 
+ 
+.libox{
+  margin-top: -57%;
+  color: #ffffff;
+  padding: 25% 40%;
+  background-color: #000000a8;
+  z-index: 1;
+  position: absolute;
+  text-shadow: #000 -3px 3px 4px;
+
+}
 
 
 @media screen and (max-width: 2560px){
@@ -163,17 +174,6 @@ font-weight: 700;
   }}
 
 
- 
-.libox{
-  margin-top: -76%;
-    color: #ffffff;
-    padding: 32% 40%;
-    background-color: #000000a8;
-    z-index: 1;
-    position: absolute;
-    text-shadow: #000 -3px 3px 4px;
-
-}
 
 
 
@@ -267,13 +267,14 @@ text-shadow: #000 -3px 3px 4px;
 
 @media screen and (max-width: 600px) {
   .libox {
-    margin-top: -76%;
+    margin-top: -96%;
     color: #ffffff;
-    padding: 23% 33%;
+    padding: 38% 38%;
     position: absolute;
     text-shadow: #000 -3px 3px 4px;
     background-color: #000000a8;
     font-size: 27px;
+
 
   }
 }

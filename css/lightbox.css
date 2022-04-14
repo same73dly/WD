@@ -1,8 +1,8 @@
  
 .contain{
-  width: 60%;
+  width: 70%;
   margin-top: 27px;
-  margin-right: 17%;
+  margin-right: 14%;
 }
 
 
@@ -149,7 +149,11 @@ font-weight: 700;
 }
 
 
- 
+
+
+
+
+
 .libox{
   margin-top: -57%;
   color: #ffffff;
@@ -163,18 +167,48 @@ font-weight: 700;
 
 
 
+    
+@media screen and (max-width: 2560px){
+  .libox {
+
+    margin-top: -45%;
+    color: #ffffff;
+    padding: 19% 43%;
+    background-color: #000000a8;
+    z-index: 1;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
+ 
+
+
+  }}
+
+
+@media screen and (max-width: 1440px){
+  .libox {
+    
+margin-top: -46%;
+color: #ffffff;
+padding: 17% 39%;
+background-color: #000000a8;
+z-index: 1;
+position: absolute;
+text-shadow: #000 -3px 3px 4px;
+
+  }}
+
 
 
 
 @media screen and (max-width: 1024px){
   .libox {
-margin-top: -78%;
-color: #ffffff;
-padding: 27% 37%;
-background-color: #000000a8;
-z-index: 1;
-position: absolute;
-text-shadow: #000 -3px 3px 4px;
+    margin-top: -65%;
+    color: #ffffff;
+    padding: 23% 40%;
+    background-color: #000000a8;
+    z-index: 1;
+    position: absolute;
+    text-shadow: #000 -3px 3px 4px;
 
   }}
 
@@ -223,15 +257,14 @@ text-shadow: #000 -3px 3px 4px;
 
 @media screen and (max-width: 768px) {
   .libox {
-   
-align-items: center;
-margin-top: -77%;
-color: #ffffff;
-padding: 27% 36%;
-position: absolute;
-background-color: #000000a8;
-z-index: 1;
-text-shadow: #000 -3px 3px 4px;
+    align-items: center;
+    margin-top: -74%;
+    color: #ffffff;
+    padding: 26% 38%;
+    position: absolute;
+    background-color: #000000a8;
+    z-index: 1;
+    text-shadow: #000 -3px 3px 4px;
 
 
 
@@ -275,9 +308,9 @@ text-shadow: #000 -3px 3px 4px;
 
 @media screen and (max-width: 490px) {
   .libox {
-    margin-top: -76%;
+    margin-top: -69%;
     color: #ffffff;
-    padding: 24% 33%;
+    padding: 21% 35%;
     position: absolute;
     text-shadow: #000 -3px 3px 4px;
     background-color: #000000a8;
@@ -291,9 +324,9 @@ text-shadow: #000 -3px 3px 4px;
 
 @media screen and (max-width: 380px){
   .libox {
-    margin-top: -88%;
+    margin-top: -72%;
     color: #ffffff;
-    padding: 34% 37%;
+    padding: 27% 40%;
     font-size: 17px;
     z-index: 1;
     position: absolute;
@@ -301,24 +334,14 @@ text-shadow: #000 -3px 3px 4px;
        }
   }
   
-
-  @media screen and (max-width: 375px){
-.libox {
-    margin-top: -77%;
-    color: #ffffff;
-    padding: 30% 38%;
-    font-size: 17px;
-    z-index: 1;
-    position: absolute;
-    text-shadow: #000 -3px 3px 4px;
-}}
+  
 
 
 @media screen and (max-width: 320px){
 .libox {
-    margin-top: -89%;
+  margin-top: -82%;
     color: #ffffff;
-    padding: 34% 38%;
+    padding: 31% 38%;
     font-size: 17px;
     z-index: 1;
     position: absolute;

@@ -783,6 +783,9 @@ display: grid;
     height: 188px;
           width: 100%;
   }
+
+
+ 
   
   @media screen and (max-width: 2560px){
   
@@ -890,10 +893,10 @@ display: grid;
 
 
     #roun4{
-      height: 160px;
+      height: 188px;
             width: 100%;
     }
-  
+    
     
           
   @media screen and (max-width: 2560px){
@@ -998,10 +1001,14 @@ display: grid;
 
 
       #roun5{
-        height: 160px;
+        height: 188px;
               width: 100%;
       }
     
+ 
+
+
+
          
   @media screen and (max-width: 2560px){
   
@@ -1027,7 +1034,7 @@ display: grid;
   @media screen and (max-width: 1280px){
   
     #roun5{
-        height: 160px;
+        height: 130px;
         width: 100%;
       }
        
@@ -1100,7 +1107,7 @@ display: grid;
             }
              
           }
-
+ 
 
 
 

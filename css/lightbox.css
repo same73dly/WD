@@ -162,18 +162,6 @@ font-weight: 700;
 }
 
 
-@media screen and (max-width: 2560px){
-  .libox {
-    margin-top: -49%;
-    color: #ffffff;
-    padding: 18% 39%;
-    background-color: #000000a8;
-    z-index: 1;
-    position: absolute;
-    text-shadow: #000 -3px 3px 4px;
-  }}
-
-
 
 
 

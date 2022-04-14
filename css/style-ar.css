@@ -17,17 +17,81 @@
 
 
 
+#selec{
+
+  margin-right: 72%;
+    margin-top: 34px;
+    width: 97px;
+    padding: 1px;
+    background: #f0f8ff00;
+    position: absolute;
+    border: 0px;
+}
+
+
+@media screen and (max-width: 450px){
+  #selec{
+   
+margin-right: 68%;
+margin-top: 34px;
+width: 87px;
+padding: 1px;
+background: #f0f8ff00;
+position: absolute;
+border: 0px;
+
+  }
+  }
+
+
+
+@media screen and (max-width: 375px){
+  #selec{
+   
+margin-right: 65%;
+margin-top: 34px;
+width: 87px;
+padding: 1px;
+background: #f0f8ff00;
+position: absolute;
+border: 0px;
+
+  }
+  }
+
+
+
+
+  
+@media screen and (max-width: 320px){
+  #selec{
+   
+margin-right: 59%;
+margin-top: 34px;
+width: 87px;
+padding: 1px;
+background: #f0f8ff00;
+position: absolute;
+border: 0px;
+
+  }
+  }
+
+
 
 .login-trigger {
-  font-weight: 700;
-  color: #fff;
-  padding: 5px 15px;
-  border-radius: 3px;
-  border: 1px solid;
-  position: relative;
-  top: 20%;
-  margin: 18px;
+  
+  font-weight: 500;
+    color: #fff;
+    padding: 4px 17px;
+    border-radius: 3px;
+    border: 1px solid;
+    top: 24%;
+    margin: 7px 30px;
+    float: right;
+
 }
+
 
 
 .log{
@@ -70,7 +134,6 @@ padding: 6px 20px;
 border-radius: 20px;
 background: none;
 border: 2px solid #ff5a00;
-
 font-weight: bold;
 transition: all .5s;
 margin-top: 1em;

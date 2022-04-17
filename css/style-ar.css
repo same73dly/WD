@@ -13,19 +13,27 @@
 }
 
 
-
+.zero{
+  color: #575757;
+    margin-top: -63px;
+    float: left;
+    font-size: 17px;
+    margin-left: 114px;
+    font-weight: 300;
+}
 
 
 
 #selec{
-
   margin-right: 72%;
-    margin-top: 34px;
-    width: 97px;
-    padding: 1px;
-    background: #f0f8ff00;
-    position: absolute;
-    border: 0px;
+  margin-top: 33px;
+  width: 97px;
+  padding: 1px;
+  background: #f0f8ff00;
+  position: absolute;
+  border: 0px;
+  font-size: 17px;
+  font-weight: 100;
 }
 
 
@@ -94,8 +102,31 @@ border: 0px;
 
 
 
+.pass{
+  border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #eee;
+    padding: 7px 27px;
+    padding-left: 0;
+    width: 100%;
+    font-weight: normal;
+    background: #00000004;
+}
+
+
+
+
+#tas{
+  background: #8b8b8b;
+    color: #fff;
+}
+
+
+
 .log{
   color: #242424;
+  text-align: center;
 }
 .close {
 
@@ -113,14 +144,15 @@ box-shadow: none;
 border-color: #fff;
 }
 .username, .password {
-border: none;
-border-radius: 0;
-box-shadow: none;
-border-bottom: 2px solid #eee;
-padding-left: 0;
-color: #242424;
-font-weight: normal;
-background: #00000004;  
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  color: #242424;
+  font-weight: normal;
+  background: #00000004;
 }
 .form-control::-webkit-input-placeholder {
 color: #eee;  
@@ -129,15 +161,23 @@ color: #eee;
 font-weight: bold;
 color: #fff;
 }
+
+
+
 .login {
-padding: 6px 20px;
-border-radius: 20px;
-background: none;
-border: 2px solid #ff5a00;
-font-weight: bold;
-transition: all .5s;
-margin-top: 1em;
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: #dbdbdb;
+  border: 0px solid #ff5a0000;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px 34%;
+  transition: all .5s;
+  margin-top: 2em;
 }
+
+
+
 .login:hover {
 background: #ff5a00;
 color: #fff;

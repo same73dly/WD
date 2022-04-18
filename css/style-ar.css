@@ -162,6 +162,18 @@ font-weight: bold;
 color: #fff;
 }
 
+#mo{
+  font-size: 14px; font-weight: 100; color: #ff5a00; margin-top: 27px;
+}
+
+#eye{
+  position: absolute;
+            width: 7%;
+            margin-top: 10px;
+            height: 5%;
+            margin-right: 85%;
+            color: #c5c5c5;
+}
 
 
 .login {
@@ -175,6 +187,24 @@ color: #fff;
   transition: all .5s;
   margin-top: 2em;
 }
+
+
+
+
+@media screen and (max-width:400px){
+  .login {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: #dbdbdb;
+    border: 0px solid #ff5a0000;
+    font-weight: bold;
+    color: #fff;
+    margin: 2px 25%;
+    transition: all .5s;
+    margin-top: 2em;
+  
+  }
+  }
 
 
 

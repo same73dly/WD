@@ -1,0 +1,19 @@
+footer {
+  background-color:#1f2533;
+  font-size: 14px;
+  h6 {
+    color: $white;
+  }
+  a {
+    color: $white;
+  }
+  .copy-right {
+    color: $white;
+  }
+  .footer-social {
+    svg {
+      width: 30px !important;
+      height: 30px;
+    }
+  }
+}

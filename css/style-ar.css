@@ -146,7 +146,6 @@ border-color: #fff;
 .username, .password {
   border: none;
   border-radius: 0;
-  text-align: center;
   box-shadow: none;
   border-bottom: 2px solid #eee;
   padding-left: 0;

@@ -102,6 +102,16 @@ border: 0px;
 
 
 
+
+
+.login-trigger:hover {
+  
+  font-weight: 500;
+    color: #ffffff;
+    background-color: #c2c2c200;
+}
+
+
 .pass{
   border: none;
     border-radius: 0;
